@@ -1,0 +1,173 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+p {
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding-left: 0;
+}
+
+li  {
+	list-style-type: none;
+}
+
+body {
+	background-color: #F5E9E9;
+}
+
+
+.main-header h1 {
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.main-header li {
+	padding-bottom: 10px;
+}
+
+.main-header a {
+	display: block;
+	width: 100%;
+	color: black;
+	font-weight: 700;
+	background-color: white;
+	padding: 10px;
+}
+
+.main-header a:hover {
+	background-color: yellow;
+	border: 2px solid grey;
+}
+
+.profile-image {
+	padding-top: 20px;
+	display: block;
+	margin: 0 auto;
+	max-width: 80%;
+}
+
+.main-header p {
+	margin-top: 30px;
+	font-weight: 300;
+	color: grey;
+	padding-bottom: 50px;
+}
+
+.main-content {
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.main-content h2 {
+	padding-bottom: 50px;
+}
+
+.main-content p {
+	font-weight: 300;
+}
+
+.main-content img {
+	max-width: 90%;
+}
+
+.projects {
+	padding-bottom: 25px; 
+}
+
+.main-contact {
+	padding-top: 50px;
+}
+
+.main-contact p {
+	font-weight: 300;
+	color: grey;
+}
+
+.main-contact a {
+	color: black;
+	font-weight: 400;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.main-footer {
+	border-top: lightgrey 1px solid;
+	padding: 25px 10px 25px 10px;
+}
+
+.main-footer li a {
+	font-weight: 700;
+	color: black;
+}
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 768px) {
+
+.nav {
+	display: flex;
+	justify-content: center;
+}
+
+.intro {
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 0 25px;
+}
+
+.intro p {
+	text-align: left;
+}
+
+}
+
+
+	/* ---- Float clearfix ---- */
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+}
+
+}
+
+
+@media (min-width: 1024px) {
