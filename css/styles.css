@@ -4,7 +4,7 @@
 
 * {
 	box-sizing: border-box;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Ubuntu', 'Comic Neue', sans-serif, cursive;
 	text-align: center;
 }
 
@@ -38,13 +38,14 @@ li  {
 }
 
 body {
-	background-color: #F5E9E9;
+	background-color: #FAFAFA;
 }
 
 
 .main-header h1 {
 	text-align: center;
 	padding-bottom: 15px;
+	font-family: 'Comic Neue';
 }
 
 .main-header li {
@@ -62,7 +63,6 @@ body {
 
 .main-header a:hover {
 	background-color: yellow;
-	border: 2px solid grey;
 }
 
 .profile-image {
@@ -81,12 +81,12 @@ body {
 
 .main-content {
 	background-color: white;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .main-content h2 {
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 .main-content p {
@@ -102,7 +102,8 @@ body {
 }
 
 .main-contact {
-	padding-top: 50px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .main-contact p {
@@ -112,7 +113,7 @@ body {
 
 .main-contact a {
 	color: black;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 footer {
@@ -123,12 +124,23 @@ footer {
 
 .main-footer {
 	border-top: lightgrey 1px solid;
-	padding: 25px 10px 25px 10px;
+	padding: 15px 10px;
+}
+
+.main-footer p {
+	font-weight: 500;
+	font-size: 18px;
 }
 
 .main-footer li a {
-	font-weight: 700;
+	font-weight: 500;
 	color: black;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.large-footer {
+	display: none;
 }
 
 
@@ -141,6 +153,19 @@ footer {
 
 @media (min-width: 768px) {
 
+.main-header h1 {
+	padding-top: 40px;
+}
+
+.main-header a {
+	font-size: 18px;
+	background-color: #FAFAFA;
+}
+
+.profile-image {
+	max-width: 35%;
+}
+
 .nav {
 	display: flex;
 	justify-content: center;
@@ -149,15 +174,57 @@ footer {
 .intro {
 	display: flex;
 	flex-direction: row-reverse;
-	padding: 0 25px;
+	padding: 0 35px;
 }
 
 .intro p {
 	text-align: left;
+	font-size: 20px;
+	padding-right: 20px;
 }
 
+.projects {
+	float: left;
+	width: 50%;
 }
 
+.projects img {
+	max-width: 95%;
+}
+
+.main-content {
+	padding-top: 80px;
+}
+
+.main-content p {
+	padding: 0 50px;
+	font-size: 16px;
+}
+
+.main-content h3 {
+	font-size: 22px;
+}
+
+.main-contact h2 {
+	padding: 40px 0;
+	margin-top: 0;
+}
+.main-contact p {
+	font-size: 20px;
+	padding: 0 100px;
+}
+
+.small-footer {
+	display: none;
+}
+
+.large-footer {
+	display: flex;
+}
+
+.large-footer li {
+	padding: 0 20px;
+}
 
 	/* ---- Float clearfix ---- */
 
@@ -171,3 +238,36 @@ footer {
 
 
 @media (min-width: 1024px) {
+
+
+body {
+	margin: 30px 50px;
+}
+
+.desktop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.main-header h1 {
+	padding-top: 0;
+}
+
+.main-header li {
+	padding-top: 23.45px;
+	padding-bottom: 15px;
+}
+
+.intro {
+	padding: 0;
+}
+
+.projects {
+	float: left;
+	width: 33%;
+}
+
+.main-contact {
+}
