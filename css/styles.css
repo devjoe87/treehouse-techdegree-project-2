@@ -10,15 +10,18 @@
 
 h1 {
 	font-size: 35px;
+	color: tomato;
 }
 
 h2 {
 	font-size: 20px;
+	color: tomato;
 }
 
 h3 {
 	font-size: 20px;
 	font-weight: 400;
+	color: tomato;
 }
 
 p {
@@ -61,7 +64,9 @@ body {
 	padding: 10px;
 }
 
-.main-header a:hover {
+.main-header a:hover,
+.main-footer a:hover,
+.main-socials a:hover {
 	background-color: yellow;
 }
 
@@ -112,14 +117,23 @@ body {
 }
 
 .main-contact a {
-	color: black;
+	color: grey;
 	font-weight: 700;
+}
+
+.main-socials img {
+	width: 30px;
+}
+
+.main-socials h3 {
+	font-size: 18px;
 }
 
 footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .main-footer {
@@ -130,6 +144,7 @@ footer {
 .main-footer p {
 	font-weight: 500;
 	font-size: 18px;
+	color: red;
 }
 
 .main-footer li a {
@@ -137,10 +152,15 @@ footer {
 	color: black;
 	font-size: 18px;
 	text-transform: uppercase;
+	padding: 10px;
 }
 
 .large-footer {
 	display: none;
+}
+
+.main-socials a {
+	color: black;
 }
 
 
@@ -151,7 +171,7 @@ footer {
 ==================================== */
 
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
 .main-header h1 {
 	padding-top: 40px;
@@ -214,6 +234,20 @@ footer {
 	padding: 0 100px;
 }
 
+.social-section {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 25px;
+}
+
+.social-section img {
+	width: 50px;
+}
+
+.social-section a {
+	padding: 0 50px;
+}
+
 .small-footer {
 	display: none;
 }
@@ -237,8 +271,7 @@ footer {
 }
 
 
-@media (min-width: 1024px) {
-
+@media screen and (min-width: 1024px) {
 
 body {
 	margin: 30px 50px;
@@ -248,7 +281,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
 }
 
 .main-header h1 {
@@ -268,6 +300,4 @@ body {
 	float: left;
 	width: 33%;
 }
-
-.main-contact {
 }

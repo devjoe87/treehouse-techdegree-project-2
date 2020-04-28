@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/styles.css">
@@ -10,14 +10,15 @@
 
 <body>
 	<header class="main-header">
-		<div class="desktop">
+		<nav class="desktop">
 		<h1 class="name" id="top">Joseph Barrett</h1>
 			<ul class="nav">
 				<li><a href="#">HOME</a></li>
 				<li><a href="#portfolio">PORTFOLIO</a></li>
 				<li><a href="#contact">CONTACT</a></li>
+				<li><a href="#socials">SOCIALS</a></li>
 			</ul>
-		</div>
+		</nav>
 	
 	
 	<div class="intro">
@@ -31,62 +32,78 @@
 <div class="main-content clearfix">
 	<h2 id="portfolio">PORTFOLIO</h2>
 
-		<div class="projects">
+		<article class="projects">
 			<img src="images/portfolio-1.png" alt="image for marketing">
 			<h3>Marketing Page</h3>
 			<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-		</div>
+		</article>
 
-		<div class="projects">
+		<article class="projects">
 			<img src="images/portfolio-2.png" alt="image for search page">
 			<h3>Search Page</h3>
 			<p>This project searches through a specific database to find information that the user is trying to look up.</p>
-		</div>
+		</article>
 			
-		<div class="projects">
+		<article class="projects">
 			<img src="images/portfolio-3.png" alt="image for travel app">
 			<h3>Travel App</h3>
 			<p>This project compares travel times based on different transportation methods and tells you the best ones.</p>
-		</div>
+		</article>
 
-		<div class="projects">
+		<article class="projects">
 			<img src="images/portfolio-4.png" alt="image for favourite spots">
 			<h3>Map of Favourite Spots</h3>  <!--uk spelling-->
 			<p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
-		</div>
+		</article>
 
-		<div class="projects">
+		<article class="projects">
 			<img src="images/portfolio-5.png" alt="image for photo gallery">
 			<h3>Photo Gallery</h3>
 			<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-		</div>
+		</article>
 
-		<div class="projects">
+		<article class="projects">
 			<img src="images/portfolio-6.png" alt="image for calculator">
 			<h3>Calculator</h3>
 			<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-		</div>
+		</article>
 </div>
 
-<div class="main-contact">
+<section class="main-contact">
 	<h2 id="contact">CONTACT</h2>
 	<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-	<p>Phone   <a href "tel:+441234567890">+44 123-456-7890</a></p>
+	<p>Phone   <a href="tel:+441234567890">+44 123-456-7890</a></p>
 	<p>Email   <a href="mailto:email@mysite.com">email@mysite.com</a></p>
-</div>
+</section>
+
+<section class="main-socials">
+	<h2 id="socials">SOCIALS</h2>
+	<h3>Follow me on...</h3>
+
+	<div class=social-section>
+		<img src="images/twitter.svg" alt="twitter logo">
+		<h3><a href="https://twitter.com/Yorkie_Joe" target="_blank">Twitter</a></h3>
+
+		<img src="images/linkedin.svg" alt="linkedin logo">
+		<h3><a href="https://uk.linkedin.com/in/joseph-barrett-999b54113" target="_blank">LinkedIn</a></h3>
+
+		<img src="images/insta.svg" alt="instagram logo">
+		<h3><a href="https://www.instagram.com/yorkie_joe/?hl=en" target="_blank">Instagram</a></h3>
+	</div>
+</section>
+
 
 <footer class="main-footer">
 		<p>Joseph Barrett</p>
-		<ul>
-			<div class="small-footer">
-				<li><a href="#top">back to top</a></li>
-			</div>
+		<ul class=small-footer>
+			<li><a href="#top">back to top</a></li>
+		</ul>
 
-			<div class="large-footer">
-				<li><a href="#top">home</a></li>
-				<li><a href="#portfolio">portfolio</a></li>
-				<li><a href="contact">contact</a></li>
-			</div>
+		<ul class="large-footer">
+			<li><a href="#top">home</a></li>
+			<li><a href="#portfolio">portfolio</a></li>
+			<li><a href="#contact">contact</a></li>
+			<li><a href="#socials">socials</a></li>
 		</ul>
 </footer>
 
